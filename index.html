@@ -1,97 +1,35 @@
-Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Entry module not found: Error: Cannot resolve 'file' or 'directory' /Users/martinnajle/discovery/discovery-app-react/src/  dist/index.html in /Users/martinnajle/discovery/discovery-app-react/src:
-  Error: Cannot resolve 'file' or 'directory' /Users/martinnajle/discovery/discovery-app-react/src/dist/index.html in /User  s/martinnajle/discovery/discovery-app-react/src
-  
-  - compiler.js:79 
-    [discovery-app-react]/[html-webpack-plugin]/lib/compiler.js:79:16
-  
-  - Compiler.js:214 Compiler.<anonymous>
-    [discovery-app-react]/[webpack]/lib/Compiler.js:214:10
-  
-  - Compiler.js:403 
-    [discovery-app-react]/[webpack]/lib/Compiler.js:403:12
-  
-  - Tapable.js:67 Compiler.next
-    [discovery-app-react]/[tapable]/lib/Tapable.js:67:11
-  
-  - CachePlugin.js:40 Compiler.<anonymous>
-    [discovery-app-react]/[webpack]/lib/CachePlugin.js:40:4
-  
-  - Tapable.js:71 Compiler.applyPluginsAsync
-    [discovery-app-react]/[tapable]/lib/Tapable.js:71:13
-  
-  - Compiler.js:400 Compiler.<anonymous>
-    [discovery-app-react]/[webpack]/lib/Compiler.js:400:9
-  
-  - Compilation.js:577 Compilation.<anonymous>
-    [discovery-app-react]/[webpack]/lib/Compilation.js:577:13
-  
-  - Tapable.js:60 Compilation.applyPluginsAsync
-    [discovery-app-react]/[tapable]/lib/Tapable.js:60:69
-  
-  - Compilation.js:572 Compilation.<anonymous>
-    [discovery-app-react]/[webpack]/lib/Compilation.js:572:10
-  
-  - Tapable.js:60 Compilation.applyPluginsAsync
-    [discovery-app-react]/[tapable]/lib/Tapable.js:60:69
-  
-  - Compilation.js:567 Compilation.<anonymous>
-    [discovery-app-react]/[webpack]/lib/Compilation.js:567:9
-  
-  - Tapable.js:60 Compilation.applyPluginsAsync
-    [discovery-app-react]/[tapable]/lib/Tapable.js:60:69
-  
-  - Compilation.js:563 Compilation.<anonymous>
-    [discovery-app-react]/[webpack]/lib/Compilation.js:563:8
-  
-  - Tapable.js:60 Compilation.applyPluginsAsync
-    [discovery-app-react]/[tapable]/lib/Tapable.js:60:69
-  
-  - Compilation.js:525 Compilation.seal
-    [discovery-app-react]/[webpack]/lib/Compilation.js:525:7
-  
-  - Compiler.js:397 Compiler.<anonymous>
-    [discovery-app-react]/[webpack]/lib/Compiler.js:397:15
-  
-  - Tapable.js:103 
-    [discovery-app-react]/[tapable]/lib/Tapable.js:103:11
-  
-  - Compilation.js:445 Compilation.<anonymous>
-    [discovery-app-react]/[webpack]/lib/Compilation.js:445:10
-  
-  - Compilation.js:344 Compilation.errorAndCallback
-    [discovery-app-react]/[webpack]/lib/Compilation.js:344:3
-  
-  - Compilation.js:358 Compilation.<anonymous>
-    [discovery-app-react]/[webpack]/lib/Compilation.js:358:11
-  
-  - NormalModuleFactory.js:29 onDoneResolving
-    [discovery-app-react]/[webpack]/lib/NormalModuleFactory.js:29:20
-  
-  - NormalModuleFactory.js:85 
-    [discovery-app-react]/[webpack]/lib/NormalModuleFactory.js:85:20
-  
-  - async.js:726 
-    [discovery-app-react]/[async]/lib/async.js:726:13
-  
-  - async.js:52 
-    [discovery-app-react]/[async]/lib/async.js:52:16
-  
-  - async.js:241 done
-    [discovery-app-react]/[async]/lib/async.js:241:17
-  
-  - async.js:44 
-    [discovery-app-react]/[async]/lib/async.js:44:16
-  
-  - async.js:723 
-    [discovery-app-react]/[async]/lib/async.js:723:17
-  
-  - async.js:167 
-    [discovery-app-react]/[async]/lib/async.js:167:37
-  
-  - UnsafeCachePlugin.js:24 
-    [discovery-app-react]/[enhanced-resolve]/lib/UnsafeCachePlugin.js:24:19
-  
-</pre><script type="text/javascript" src="/main.bundle.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Discovery App</title>
+    <link rel="stylesheet" href="/main.css" media="screen" charset="utf-8" />
+    <link href="/favicon.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    <main></main>
+  </body>
+  <script src="/main.bundle.js" charset="utf-8"></script>
+  <!--ANALYTICS-->
+  <noscript>
+    <iframe
+      src="//www.googletagmanager.com/ns.html?id=GTM-PJ5RQ2"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden"
+    >
+    </iframe>
+  </noscript>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-PJ5RQ2");
+  </script>
+</html>
